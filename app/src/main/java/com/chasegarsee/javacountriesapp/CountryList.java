@@ -215,11 +215,11 @@ public class CountryList
 
     public Country findCountry(CheckCountry tester)
     {
-        for (Country e : countryList)
+        for (Country c : countryList)
         {
-            if (tester.test(e))
+            if (tester.test(c))
             {
-                return e;
+                return c;
             }
         }
         return null;
@@ -238,5 +238,8 @@ public class CountryList
         }
         return tempCountryList;
     }
+
+
+
 }
 

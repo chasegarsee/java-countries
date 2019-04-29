@@ -21,6 +21,15 @@ public class Country
         this.medianAge = medianAge;
     }
 
+    public Country(Country toClone)
+    {
+        this.id = counter.incrementAndGet();
+        this.name = toClone.name;
+        this.population = toClone.population;
+        this.landMass = toClone.landMass;
+        this.medianAge = toClone.medianAge;
+    }
+
     public long getId()
     {
         return id;
